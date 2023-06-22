@@ -18,6 +18,21 @@ Array.prototype.mfilter =  function (callback) {
   }
   return filtered;
 };
+
+
+
+Array.prototype.myFilter = function(callback){
+  var newArray = [];
+  // Add your code below this line
+  this.forEach(function(x) {
+    if (callback(x) == true) {
+      newArray.push(x);
+    }
+  })
+  // Add your code above this line
+  return newArray;
+
+};
 ```
 
 ## reduce
